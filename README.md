@@ -3,9 +3,14 @@
 This repo contains the source code of **Ethical-Lens**, which is an easily plug-and-play alignment frame-work compatible with all *open-source text-to-image tools* without any tool internal revision. Ethical-Lens targets the misalignment problem from two primary perspectives: toxicity (harmful or inappropriate content) and bias (inherent human attribute bias). See our paper for details.
 
 Refer to our paper for more details: [Ethical-Lens: Curbing Malicious Usages of
-Open-Source Text-to-Image Models](http://www.ethicallens.com/)
+Open-Source Text-to-Image Models](https://arxiv.org/abs/2404.12104)
 
-There is a video which showcases the performance of Ethical Lens in various scenarios. You can access [here](https://www.youtube.com/watch?v=QbsKFwHbY-8).
+Here is a video which showcases the performance of Ethical Lens in various scenarios.
+<div style="width: 100%;">
+  <video src="docs/assets/Ethical-Lens.mp4" width="100%" height="auto" autoplay loop muted></video>
+</div>
+
+
 
 ![intro](/docs/assets/intro.jpg)
 
@@ -14,7 +19,7 @@ There is a video which showcases the performance of Ethical Lens in various scen
 First clone this repo.
 
 ```
-git clone https://github.com/debug1114/EthicalLens.git
+git clone https://github.com/yuzhu-cai/Ethical-Lens.git
 ```
 
 ### Step1: Setup environment
@@ -31,7 +36,7 @@ pip install -r requirements.txt
 
 ### Step2: Install FairFace
 
-The installation is the same as [FairFace]([dchen236/FairFace (github.com)](https://github.com/dchen236/FairFace)). Please go through the following steps.
+The installation is the same as [FairFace](https://github.com/dchen236/FairFace). Please go through the following steps.
 
 ```
 cd common/fairface
@@ -61,30 +66,20 @@ cd common/AdaTrans
   data/ckpt/Age/save_models/model-latest
   data/ckpt/8_9_11/save_models/model-latest
   data/ckpt/32_33/save_models/model-latest
-
 ```
-
-
-
-## Inference
-
-Clone the repo and install the required packages.
-
-
-
-## Evaluation
-
-Evaluation codes are put in `evaluator/` directory. 
-
-
-
-## Generation
-
-Evaluation codes are put in `generator/` directory. 
-
-
 
 ## Citation
 
 Please cite our paper if you find the repository helpful.
+
+```
+@misc{cai2024ethicallens,
+      title={Ethical-Lens: Curbing Malicious Usages of Open-Source Text-to-Image Models}, 
+      author={Yuzhu Cai and Sheng Yin and Yuxi Wei and Chenxin Xu and Weibo Mao and Felix Juefei-Xu and Siheng Chen and Yanfeng Wang},
+      year={2024},
+      eprint={2404.12104},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
 
