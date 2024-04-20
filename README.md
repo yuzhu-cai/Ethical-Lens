@@ -7,7 +7,7 @@ Open-Source Text-to-Image Models](https://arxiv.org/abs/2404.12104)
 
 Here is a video which showcases the performance of Ethical Lens in various scenarios.
 
-<video src="https://www.youtube.com/watch?v=qWBDI_dLrZU" controls="controls" width="500px"></video>
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/qWBDI_dLrZU/0.jpg)](https://www.youtube.com/watch?v=qWBDI_dLrZU)
 
 ![intro](/docs/assets/intro.jpg)
 
