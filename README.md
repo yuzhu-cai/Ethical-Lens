@@ -6,11 +6,8 @@ Refer to our paper for more details: [Ethical-Lens: Curbing Malicious Usages of
 Open-Source Text-to-Image Models](https://arxiv.org/abs/2404.12104)
 
 Here is a video which showcases the performance of Ethical Lens in various scenarios.
-<div style="width: 100%;">
-  <video src="docs/assets/Ethical-Lens.mp4" width="100%" height="auto" autoplay loop muted></video>
-</div>
 
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qWBDI_dLrZU?si=0QqvF-y-Nxa-8ZJz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ![intro](/docs/assets/intro.jpg)
 
