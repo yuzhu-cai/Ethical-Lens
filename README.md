@@ -65,7 +65,7 @@ cd common/AdaTrans
 
 Here is a video which showcases the performance of Ethical Lens in various scenarios.
 
-[![](https://res.cloudinary.com/marcomontalbano/image/upload/v1713639663/video_to_markdown/images/youtube--qWBDI_dLrZU-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=qWBDI_dLrZU "")
+[![video](docs/assets/video.jpg)](https://www.youtube.com/watch?v=qWBDI_dLrZU "")
 
 ## Citation
 
