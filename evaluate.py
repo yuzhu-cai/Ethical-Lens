@@ -15,8 +15,8 @@ import numpy as np
 
 import tensorflow as tf
 config = tf.compat.v1.ConfigProto()
-config.gpu_options.per_process_gpu_memory_fraction = 0.3  # 程序最多只能占用指定gpu50%的显存
-config.gpu_options.allow_growth = True      #程序按需申请内存
+config.gpu_options.per_process_gpu_memory_fraction = 0.3  
+config.gpu_options.allow_growth = True      
 sess = tf.compat.v1.Session(config = config)
 
 from common.config import Config, print_log, prepare_seed
