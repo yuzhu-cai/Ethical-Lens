@@ -1,5 +1,7 @@
 # Ethical-Lens: Curbing Malicious Usages of Open-Source Text-to-Image Models
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14554874.svg)](https://doi.org/10.5281/zenodo.14554874)
+
 This repo contains the source code of **Ethical-Lens**, which is an easily plug-and-play alignment frame-work compatible with all *open-source text-to-image tools* without any tool internal revision. Ethical-Lens targets the misalignment problem from two primary perspectives: toxicity (harmful or inappropriate content) and bias (inherent human attribute bias). See our paper for details.
 
 ![intro](/docs/assets/intro.jpg)
