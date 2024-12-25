@@ -35,7 +35,6 @@ class Ethicallens():
         # load models
         self.text2img = DiffusionPipeline.from_pretrained(cfg['text2img_path'], torch_dtype=torch.float16, from_tf=False).to(self.device)
 
-        self.llm = LocalChatLLM_qwen(cfg['llm_path'], cfg['peft_path'])
 
         self.sc = safe_classifier(self.checkpoints)
         self.clipfuzz = ClipFuzz(model_path=self.clipseg_path, dilation_radius=30, blur_radius=0)

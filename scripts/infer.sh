@@ -2,10 +2,9 @@ gpu=2,3
 
 
 # text2img_path="dreamlike-art/dreamlike-diffusion-1.0"
-text2img_path="/dev/shm/data/shengyin/pretrain_model/models--dreamlike-art--dreamlike-diffusion-1.0/snapshots/9fb5a6463bf79d81152e715e8d2a8b988f96c790"
-llm_path="/home/ubuntu/yuxiwei/llm_finetune/Qwen-7B-Chat"
-peft_path="/home/ubuntu/yuxiwei/Qwen/output/merged_all_0223"
-clipseg_path="/home/ubuntu/DATA1/yuzhucai/prestrain_model/CIDAS--clipseg-rd64-refined"
+text2img_path="" # your path to Text2Image Model
+llm_path=""  # your path to Text Scrutiny LLM
+clipseg_path="" # yout path to CIDAS/clipseg-rd64-refined
 checkpoints="./checkpoints"
 
 resolution=512
@@ -20,7 +19,6 @@ state="Yes"
 CUDA_VISIBLE_DEVICES=$gpu python infer.py \
     --text2img_path $text2img_path  \
     --llm_path $llm_path  \
-    --peft_path $peft_path  \
     --clipseg_path $clipseg_path  \
     --checkpoints $checkpoints  \
     --resolution $resolution  \

@@ -34,10 +34,9 @@ if __name__ == "__main__":
     parser.add_argument("--faceedit_device", type=int, default=1)
     parser.add_argument("--if_fairface", type=bool, default=True)
     parser.add_argument("--checkpoints", type=str, default='./checkpoints')
-    parser.add_argument("--clipseg_path", type=str, default='/home/ubuntu/DATA1/yuzhucai/prestrain_model/CIDAS--clipseg-rd64-refined')
-    parser.add_argument("--llm_path", type=str, default="/home/ubuntu/yuxiwei/llm_finetune/Qwen-7B-Chat")
-    parser.add_argument("--peft_path", type=str, default="/home/ubuntu/yuxiwei/Qwen/output/merged_all_0223")
-    parser.add_argument("--text2img_path", type=str, default="/dev/shm/data/shengyin/pretrain_model/models--dreamlike-art--dreamlike-diffusion-1.0/snapshots/9fb5a6463bf79d81152e715e8d2a8b988f96c790")
+    parser.add_argument("--clipseg_path", type=str, default='') # yout path to CIDAS/clipseg-rd64-refined
+    parser.add_argument("--llm_path", type=str, default="") # your path to Text Scrutiny LLM
+    parser.add_argument("--text2img_path", type=str, default="") # your path to Text2Image Model
 
     parser.add_argument("--prompt", type=str, required=True)
     parser.add_argument("--num_images_per_prompt", type=int, default=1)

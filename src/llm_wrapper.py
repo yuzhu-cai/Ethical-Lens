@@ -71,17 +71,13 @@ class LocalChatLLM_llama(object):
         return response
 
 class LocalChatLLM_qwen(object):
-    def __init__(self, model_name, peft_path=None):
+    def __init__(self, model_name):
         from modelscope import AutoModelForCausalLM, AutoTokenizer
         from modelscope import GenerationConfig
         self.model_name = model_name # Qwen/Qwen-7B-Chat
         self.tokenizer = AutoTokenizer.from_pretrained(self.model_name, trust_remote_code=True)
         self.model = AutoModelForCausalLM.from_pretrained(self.model_name, device_map="auto", trust_remote_code=True, fp16=True).eval()
         self.model.generation_config = GenerationConfig.from_pretrained(self.model_name, trust_remote_code=True)
-        if peft_path is not None:
-            peft_model = PeftModel.from_pretrained(self.model, peft_path, device_map="auto")
-            self.model = peft_model.merge_and_unload()
-            print(f"####### PEFT LOADED###########")
 
         self.model_max_length = self.tokenizer.model_max_length
 
