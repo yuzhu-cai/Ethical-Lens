@@ -58,6 +58,22 @@ cd common/AdaTrans
   data/ckpt/32_33/save_models/model-latest
 ```
 
+## Citation
+
+If you find our work helpful, please use the following citations.
+
+```
+@misc{cai2024ethicallenscurbingmalicioususages,
+      title={Ethical-Lens: Curbing Malicious Usages of Open-Source Text-to-Image Models}, 
+      author={Yuzhu Cai and Sheng Yin and Yuxi Wei and Chenxin Xu and Weibo Mao and Felix Juefei-Xu and Siheng Chen and Yanfeng Wang},
+      year={2024},
+      eprint={2404.12104},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2404.12104}, 
+}
+```
+
 ## Youtube Overview
 
 Here is a video which showcases the performance of Ethical Lens in various scenarios.
